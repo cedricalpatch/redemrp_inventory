@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<body>
+<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="js/jquery-func.js" type="text/javascript"></script>
+<script src="js/listener.js" type="text/javascript"></script>
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <div id='main'>
+    <div class="column box0"> 
+    </div>
+    <div class="column box1"> 
+    </div>
+    <div class="column box2"> 
+    </div> 
+<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script src="js/inventory.js" type="text/javascript"></script>
+  </div>
+</body>
+
+<style>
+  .column{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    margin: 0 1.5%;
+    background: #472626;
+    border-radius: 3px;
+    min-height: 130px;
+  }
+  .column.box1{
+    left: 33%;
+  }
+  .column.box2{
+    left: 66%;
+  }
+  .item {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    margin: 5px;
+    background: rgb(56, 28, 28);
+    z-index: 10;
+    color: #fff;
+  }
+  .item.muuri-item-dragging {
+    z-index: 9999;
+  }
+  .item.muuri-item-releasing {
+    z-index: 9998;
+  }
+  .item.muuri-item-hidden {
+    z-index: 0;
+  }
+  .item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .item-content-main{
+      height: 100px;
+      width: 100px;
+      font-size: 20px;
+      color: black;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .item-content-footer{
+        height: 20%;
+        width: 100%;
+        background-color: gray;
+    }
+    .item-content-amount-moved{
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 25px;
+      position: absolute;
+      top: 0;
+      text-align: center;
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+    }
+</style>
+
+
+
+
